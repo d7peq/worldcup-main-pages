@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于世界杯 · 稳定入口</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #f7f3ed;
+            font-family: 'Times New Roman', 'Noto Serif SC', serif;
+            color: #2c2c2c;
+            line-height: 1.75;
+            padding: 2rem 1.5rem;
+        }
+
+        .page {
+            max-width: 780px;
+            margin: 0 auto;
+            background: #faf8f4;
+            padding: 3rem 2.5rem 4rem;
+            border-radius: 0;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+            border: 1px solid #e6ddd0;
+        }
+
+        h1 {
+            font-size: 2.4rem;
+            font-weight: 400;
+            letter-spacing: 3px;
+            text-align: center;
+            margin-bottom: 0.25rem;
+            color: #3f362b;
+            border-bottom: 1px solid #dcd0c0;
+            padding-bottom: 1.2rem;
+        }
+
+        .subhead {
+            text-align: center;
+            font-style: italic;
+            color: #6f6559;
+            font-size: 1rem;
+            margin-top: -0.3rem;
+            margin-bottom: 2.5rem;
+            letter-spacing: 0.5px;
+        }
+
+        .hero-quote {
+            font-size: 1.15rem;
+            background: #efe9e0;
+            padding: 1.8rem 2rem;
+            margin-bottom: 2.2rem;
+            border-left: 5px solid #b8a796;
+            color: #3d362d;
+            line-height: 1.7;
+            quotes: "“" "”" "‘" "’";
+        }
+
+        .hero-quote::before {
+            content: "“";
+            font-size: 2.5rem;
+            color: #9b8c7a;
+            margin-right: 6px;
+            vertical-align: middle;
+            line-height: 1;
+        }
+
+        .hero-quote::after {
+            content: "”";
+            font-size: 2.5rem;
+            color: #9b8c7a;
+            margin-left: 6px;
+            vertical-align: bottom;
+            line-height: 0;
+        }
+
+        p {
+            margin-bottom: 1.4rem;
+            text-indent: 2em;
+            font-size: 1.05rem;
+        }
+
+        p.no-indent {
+            text-indent: 0;
+        }
+
+        .intro-box {
+            background: #f3ede5;
+            padding: 1.6rem 2rem;
+            margin: 2rem 0 2.2rem;
+            border-radius: 2px;
+            border: 1px solid #ddd2c2;
+        }
+
+        .intro-box p {
+            text-indent: 0;
+            margin-bottom: 0.8rem;
+        }
+
+        .intro-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        .feature-list {
+            list-style: none;
+            margin: 2.5rem 0;
+            padding: 0;
+        }
+
+        .feature-list li {
+            padding: 0.9rem 1.2rem 0.9rem 2.2rem;
+            border-bottom: 1px dashed #dacfc1;
+            position: relative;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .feature-list li:last-child {
+            border-bottom: none;
+        }
+
+        .feature-list li::before {
+            content: "·";
+            position: absolute;
+            left: 0.8rem;
+            color: #8d7f6b;
+            font-size: 1.8rem;
+            line-height: 1.2;
+        }
+
+        .highlight-link {
+            background: #f1ebe0;
+            padding: 0.1rem 0.4rem;
+            font-style: normal;
+            border-bottom: 1px dotted #a4947e;
+        }
+
+        a {
+            color: #5b4c39;
+            text-decoration: none;
+            border-bottom: 1px solid #cbbca8;
+            transition: border-color 0.2s, color 0.2s;
+        }
+
+        a:hover {
+            color: #2d2419;
+            border-bottom: 1px solid #5b4c39;
+        }
+
+        .faq-summary {
+            margin: 2.8rem 0 1.8rem;
+            border-top: 1px solid #e3d8ca;
+            padding-top: 2rem;
+        }
+
+        .faq-item {
+            margin-bottom: 1.3rem;
+        }
+
+        .faq-q {
+            font-weight: 500;
+            color: #4c4034;
+            margin-bottom: 0.2rem;
+            font-size: 1.02rem;
+        }
+
+        .faq-a {
+            padding-left: 1.2rem;
+            color: #555048;
+            font-size: 0.98rem;
+            border-left: 2px solid #d8ccbb;
+        }
+
+        .faq-a p {
+            text-indent: 0;
+            margin-bottom: 0.3rem;
+        }
+
+        .closing-note {
+            margin-top: 2.8rem;
+            text-align: center;
+            font-size: 0.95rem;
+            color: #716658;
+            border-top: 1px solid #e3d8ca;
+            padding-top: 2rem;
+            font-style: normal;
+        }
+
+        .closing-note em {
+            font-style: italic;
+            color: #4d4236;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 1rem 0.8rem;
+            }
+
+            .page {
+                padding: 2rem 1.2rem 3rem;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+                letter-spacing: 1px;
+            }
+
+            .hero-quote {
+                padding: 1.2rem 1.2rem;
+                font-size: 1rem;
+            }
+
+            .feature-list li {
+                padding-left: 1.8rem;
+            }
+
+            .feature-list li::before {
+                left: 0.4rem;
+            }
+
+            .intro-box {
+                padding: 1rem 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <h1>世界杯</h1>
+        <div class="subhead">一个关于入口与叙事的页面</div>
+
+        <div class="hero-quote">
+            足球是圆的，故事也是。每一届大赛都从某个安静的入口开始——可能是打开一个链接的瞬间，也可能是一段文字带来的期待。
+        </div>
+
+        <p>
+            四年一度的盛会，总有许多侧面值得被讲述。但在此之前，或许需要一个稳定的起点。这个页面所指向的，正是这样一个地方——一个持续提供赛事信息、赛程动态与历史脉络的站点。它的名字很简单，就是<a href="https://worldcup-main-fifa.com">世界杯</a>。
+        </p>
+
+        <p>
+            不需要华丽的导航，也无需复杂的跳转。当你读到这个句子，实际上已经站在一条小径的起点。这条小径通往的是赛事本身，而非第三方的转述或二手资讯。保持直接，是这个页面最朴素的意图。
+        </p>
+
+        <div class="intro-box">
+            <p><strong>为什么强调“入口”？</strong></p>
+            <p>在信息过载的时代，一个干净、指向明确的页面反而成了稀缺物。所谓入口，不只是URL，更是一种阅读前的整理——你知道自己要去哪里，也知道那里有什么。</p>
+            <p>这里没有弹窗，没有浮夸的倒计时，只有赛事本来的样子。</p>
+        </div>
+
+        <p>
+            如果把一届世界杯看作一部多卷本的长篇，那么每一个比赛日都是一章，每一次淘汰赛都是一次转折。而阅读这样一部作品，最好的方式是从第一个句子开始，而不是从中间跳入。
+        </p>
+
+        <ul class="feature-list">
+            <li><strong>稳定的地址</strong> —— 不会随时间迁移，无需反复搜索，适合作为书签或长期引用的锚点。</li>
+            <li><strong>清晰的结构</strong> —— 赛程、分组、历史数据，以克制的方式排列，不干扰阅读节奏。</li>
+            <li><strong>叙述的余地</strong> —— 页面本身并不喧嚣，它把讲述的权力留给比赛本身。</li>
+            <li><strong>记忆的载体</strong> —— 对于老球迷，它是回忆的索引；对于新观众，它是理解的起点。</li>
+        </ul>
+
+        <p>
+            很多人在大赛期间习惯打开多个标签页，但最终总会回到最基础的那个。它像一本翻旧了的秩序册，没有多余的设计，却让人安心。如果你也在寻找这样一个地方，那么上面提到的<a href="https://worldcup-main-fifa.com" class="highlight-link">世界杯</a>或许就是答案。
+        </p>
+
+        <div class="faq-summary">
+            <div class="faq-item">
+                <div class="faq-q">这个页面和世界杯官网是什么关系？</div>
+                <div class="faq-a">
+                    <p>它不替代任何官方渠道，也不声称代表任何组织。它只是一个指向<a href="https://worldcup-main-fifa.com">世界杯</a>的介绍页，帮助感兴趣的读者了解这个地址的定位与内容倾向。</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-q">除了赛程，还能找到什么？</div>
+                <div class="faq-a">
+                    <p>该站点主要聚焦于赛事本身，包括历届冠军、小组赛数据、经典比赛回顾等。信息密度适中，适合日常翻阅或赛前快速查阅。</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-q">为什么强调“叙述感”？</div>
+                <div class="faq-a">
+                    <p>因为足球不仅是比分，也是一种叙事。从预选赛到决赛，每个阶段都有自己的节奏。这个页面的语气试图呼应那种节奏——平稳、持续、偶有停顿。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="closing-note">
+            <em>一场比赛持续九十分钟，一个页面或许只需要几分钟。</em><br>
+            但如果它恰好成为你了解<a href="https://worldcup-main-fifa.com">世界杯</a>的第一块路标，那就足够了。
+        </div>
+    </div>
+</body>
+</html>
